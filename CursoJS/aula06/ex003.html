@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha primeira página</title>
+    <style>
+        body{
+            background-color: rgb(136, 218, 218);
+            color: white;
+            font: normal 15pt Arial;
+        }
+        h1{
+            color: brown;
+            font: normal 20 Arial;
+        }
+        /* É assim que se faz comentário no CSS */
+    </style>
+</head>
+<body>
+    <center><h1>Bem-Vindo</h1></center>
+    <center><p>Este é o meu primeiro desenvolvimento.</p></center> <!--É assim que se comenta um código em html-->
+    <script>
+        // var n1 = window.prompt('Digite um número: ') // Entende o valor como sendo uma string
+        
+        var n1 = Number.parseInt(window.prompt('Digite um número: ')) // Esse comendo passa o valor de uma string para um valor number (int).
+        
+        // var n2 = window.prompt('Digite outro número: ') // Entende o valor como sendo uma string
+
+        var n2 = Number(window.prompt('Digite outro número: ')) // Com esse comando, o Javascript "se vira" pra descobrir que tipo de number é esse (se é int ou float)
+
+        var s = n1 + n2
+
+        window.alert('O resultado da soma é ' + s) // O javascript entregou a concatenação dos dois números.
+        window.alert(`O resultado da soma entre ${n1} e ${n2} é ${s}`) // Essa é uma forma mais fácil de executar o comando acima
+
+       // window.alert('O resultado da soma é ' + String(s)) // O comando String transforma um número em uma string (No caso acima também pode ser utilizado o comando s.toString)
+
+        // (Number + Number) para adição
+        // (String + String) para concatenação
+
+    </script>
+</body>
+</html>
