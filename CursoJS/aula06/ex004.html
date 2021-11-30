@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Página de Exercício</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
 </head>
 <body>
 
     <script>
-        
+    var nome = window.prompt('Digite seu nome: ')
+        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras.</br>`) // O comando length conta quantos caracteres tem o nome
+        document.write(`O seu nome em letras maiúsculas é ${nome.toUpperCase()}`) // O comando toUpperCase transforma todas as letras em maiúsculas.
+    var n1 = Number(window.prompt('Digite um valor: '))
+        window.alert('O valor é ' + n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
+        //Obs: comando para converter número em dado monetário (n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
     </script>
 </body>
 </html>
