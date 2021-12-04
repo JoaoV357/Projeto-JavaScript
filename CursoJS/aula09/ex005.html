@@ -14,12 +14,15 @@
     </style>
 </head>
 <body>
-    <h1>Iniciando estudos com o <strong>DOM</strong> em Javascript.</h1>
+    <h1>Iniciando estudos DOM.</h1>
     <p>Aqui vai o resultado</p>
-    <div>Clique em mim</div>
-    
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <div class='msg'>Clique em mim</div>
     <script>
-    window.document.write(window.document.URL)    
+    var p1 = window.document.getElementsByTagName('p')[1]
+    var d = window.document.querySelector('div.msg') //esta linha está relacionada a linha 20. na parte div.msg quando se usa id na div tem que colocar desse jeito ('div#msg'). caso coloque class o comando é diferente ('div.msg')
+    d.style.background = 'blue' 
+    window.document.body.style.background = 'black' // Esse comando muda a cor da tela de fundo da página.
     </script>
 </body>
 </html>
